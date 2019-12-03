@@ -33,11 +33,11 @@ $(function () {
     var scene_03 = $('.integral');
     var scene_03_content = $('.integral-content');
 
-    heroTl.to(scene_01, 2, {opacity: 0});
-    heroTlNext.to(scene_02, 2, {opacity: 1});
-    tlScroll.staggerTo(scene_02_scroll, 5, {x: "-100%"}, '+=30');
-    tlFinal.to(scene_03, 7, {opacity: 1, zIndex: 20});
-    tlFinalContent.staggerTo(scene_03_content, 0.8, {y: 0, opacity: 1}, '+=10');
+    heroTl.to(scene_01, 3, {opacity: 0});
+    heroTlNext.to(scene_02, 3, {opacity: 1});
+    tlScroll.staggerTo(scene_02_scroll, 7, {x: "-100%"}, '+=5');
+    tlFinal.staggerTo(scene_03, 7, {opacity: 1, zIndex: 20}, '+=5');
+    tlFinalContent.staggerTo(scene_03_content, 1, {y: 0, opacity: 1}, '+=0');
 
 
     var heroScene = new ScrollMagic.Scene({
@@ -91,7 +91,8 @@ $(function () {
         triggerHook: 0.5,
         reverse: true,
         tweenChanges: true,
-        duration: h + h / 7
+        // duration: h + h / 7
+        duration: 100
     })
         .setTween(tlFinalContent)
         // .addIndicators()
