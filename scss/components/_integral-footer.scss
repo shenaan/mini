@@ -1,0 +1,44 @@
+.integral-footer {
+  @include display-flex;
+  @include jc-space-between;
+  z-index: 1;
+}
+
+.integral-footer__copyright {
+  color: $greyColor;
+  p {
+    font-size: 0.88rem;
+    letter-spacing: -0.16px;
+    margin-bottom: 0;
+  }
+}
+
+
+.integral-footer__socials {
+  margin-left: auto;
+  margin-right: -12px;
+  @include display-flex;
+}
+
+.integral-footer__socials-link {
+  height: 20px;
+  color: $greyColor;
+  margin: 0 12px;
+  svg {
+    width: auto;
+    height: 20px;
+
+    path {
+      fill: $greyColor;
+      @include transition-04;
+    }
+  }
+
+  @include on-event {
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}

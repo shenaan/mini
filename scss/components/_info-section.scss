@@ -1,0 +1,30 @@
+.info{
+  overflow: hidden;
+
+  .main-container{
+    height: 100%;
+  }
+  @include display-flex;
+  @include ai-flex-center;
+}
+
+.info__scroll{
+  padding-left: 7%;
+  p{
+    font-size: 2.78rem;
+    font-weight: 600;
+    letter-spacing: -1.4px;
+    white-space: nowrap;
+  }
+
+  @include respond-to(sm){
+    p{
+      font-size: 5.78rem; //140px
+    }
+  }
+  @include respond-to(lg){
+    p{
+      font-size: 7.78rem; //140px
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../abstracts/custom-variables";
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('#{$fontsUrl}MaisonNeue-Demi.woff2') format('woff2'),
+  url('#{$fontsUrl}MaisonNeue-Demi.woff') format('woff'),
+  url('#{$fontsUrl}MaisonNeue-Demi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('#{$fontsUrl}MaisonNeue-Medium.woff2') format('woff2'),
+  url('#{$fontsUrl}MaisonNeue-Medium.woff') format('woff'),
+  url('#{$fontsUrl}MaisonNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('#{$fontsUrl}MaisonNeue-Bold.woff2') format('woff2'),
+  url('#{$fontsUrl}MaisonNeue-Bold.woff') format('woff'),
+  url('#{$fontsUrl}MaisonNeue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

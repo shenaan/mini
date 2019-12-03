@@ -1,0 +1,21 @@
+/* Basic typography style for text*/
+
+html {
+  // This defines what 1 rem is
+  font-size: $baseFontSizePixel;
+}
+
+p {
+  font-size: 0.89rem;
+  letter-spacing: -0.18px;
+  font-weight: 500;
+  line-height: 1.55;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  @include respond-to(md){
+    font-size: 1rem; //18px
+  }
+}
