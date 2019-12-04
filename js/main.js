@@ -35,14 +35,14 @@ $(function () {
 
     heroTl.to(scene_01, 3, {opacity: 0});
     heroTlNext.to(scene_02, 3, {opacity: 1});
-    tlScroll.staggerTo(scene_02_scroll, 7, {x: "-100%"}, '+=5');
+    tlScroll.staggerTo(scene_02_scroll, 3, {x: "-100%"}, '+=5');
     tlFinal.staggerTo(scene_03, 7, {opacity: 1, zIndex: 20}, '+=5');
     tlFinalContent.staggerTo(scene_03_content, 1, {y: 0, opacity: 1}, '+=0');
 
 
     var heroScene = new ScrollMagic.Scene({
         triggerElement: $('.scene-wrap'),
-        offset: h,
+        offset: h/4,
         triggerHook: 0,
         reverse: true,
         duration: "100%"
@@ -54,7 +54,7 @@ $(function () {
 
     var heroSceneNext = new ScrollMagic.Scene({
         triggerElement: $('.scene-wrap'),
-        offset: h * 1.3,
+        offset: h/2,
         triggerHook: 0,
         reverse: true,
         duration: "100%"
@@ -65,7 +65,7 @@ $(function () {
 
     var sceneScroll = new ScrollMagic.Scene({
         triggerElement: $('.scene-wrap'),
-        offset: h * 2.5,
+        offset: h * 2,
         triggerHook: 0,
         reverse: true,
         duration: h * 3
@@ -76,10 +76,10 @@ $(function () {
 
     var sceneFinal = new ScrollMagic.Scene({
         triggerElement: $('.scene-wrap'),
-        offset: h * 5.5,
+        offset: h * 5,
         triggerHook: 1,
         reverse: true,
-        duration: h / 2
+        duration: h / 3
     })
         .setTween(tlFinal)
         // .addIndicators()
@@ -87,11 +87,10 @@ $(function () {
 
     var sceneFinalContent = new ScrollMagic.Scene({
         triggerElement: $('.scene-wrap'),
-        offset: h * 6,
+        offset: h * 5,
         triggerHook: 0.5,
         reverse: true,
         tweenChanges: true,
-        // duration: h + h / 7
         duration: 100
     })
         .setTween(tlFinalContent)
