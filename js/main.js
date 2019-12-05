@@ -17,6 +17,11 @@ $(function () {
           ease: Expo.easeOut
     });
 
+    var tlScrollFade = new TimelineMax({
+        reverse: true,
+        ease: Expo.easeOut
+    });
+
     var tlFinal = new TimelineMax({
         reverse: true,
           ease: Expo.easeOut
@@ -35,7 +40,9 @@ $(function () {
 
     heroTl.to(scene_01, 3, {opacity: 0});
     heroTlNext.to(scene_02, 3, {opacity: 1});
-    tlScroll.staggerTo(scene_02_scroll, 3, {x: "-100%"}, '+=5');
+    // tlScroll.staggerTo(scene_02_scroll, 3, {x: "-100%"}, '+=5');
+    tlScroll.staggerTo(scene_02_scroll, 3, {x: "-50.5%"}, '+=5')
+        .staggerTo(scene_02_scroll, 0.5, {opacity: 0}, '+=3' );
     tlFinal.staggerTo(scene_03, 7, {opacity: 1, zIndex: 20}, '+=5');
     tlFinalContent.staggerTo(scene_03_content, 1, {y: 0, opacity: 1}, '+=0');
 
@@ -74,9 +81,10 @@ $(function () {
         // .addIndicators()
         .addTo(controller);
 
+
     var sceneFinal = new ScrollMagic.Scene({
         triggerElement: $('.scene-wrap'),
-        offset: h * 5,
+        offset: h * 4.9,
         triggerHook: 1,
         reverse: true,
         duration: h / 3
