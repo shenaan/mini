@@ -19,21 +19,30 @@
         <div class="scene__overlay"></div>
         <div class="scene__inner">
             <div class="hero scene-item">
-                <div class="hero__overlay"></div>
                 <div class="hero__inner">
                     <div class="main-container">
                         <a href="index.html" class="hero-logo" title="GDC">
                             <img src="img/logo.svg" alt="GDC">
                         </a>
                     </div>
-                    <video class="video__bg" webkit-playsinline="playsinline"
-                           playsinline="playsinline"
-                           muted="muted" autoplay="autoplay" loop="loop" preload="auto" width="1980"
-                           height="auto" data-keepplaying>
-                        <source src="video/hero.mp4" type="video/mp4">
-                        <source src="video/hero.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class="hero-video">
+                        <video class="video__bg hide-in-mob" webkit-playsinline="playsinline"
+                               playsinline="playsinline"
+                               muted="muted" autoplay="autoplay" loop="loop" preload="auto" width="1980"
+                               height="auto" data-keepplaying>
+                            <source src="video/hero.mp4" type="video/mp4">
+                            <source src="video/hero.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video class="video__bg show-in-mob" webkit-playsinline="playsinline"
+                               playsinline="playsinline"
+                               muted="muted" autoplay="autoplay" loop="loop" preload="auto" width="1980"
+                               height="auto" data-keepplaying>
+                            <source src="video/hero-mob-1.mp4" type="video/mp4">
+                            <source src="video/hero-mob.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                     <div class="hero-content">
                         <p>Scroll down to learn more</p>
                     </div>
@@ -46,12 +55,20 @@
             </div>
             <div class="integral scene-item">
                 <div class="integral-video">
-                    <video class="video__bg" webkit-playsinline="playsinline"
+                    <video class="video__bg hide-in-mob" webkit-playsinline="playsinline"
                            playsinline="playsinline"
                            muted="muted" autoplay="autoplay" loop="loop" preload="auto"
                            data-keepplaying>
-                        <source src="video/footer.mp4" type="video/mp4">
-                        <source src="video/footer.webm" type="video/webm">
+                        <source src="video/footer-mob.mp4" type="video/mp4">
+                        <source src="video/footer-mob.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="video__bg show-in-mob" webkit-playsinline="playsinline"
+                           playsinline="playsinline"
+                           muted="muted" autoplay="autoplay" loop="loop" preload="auto"
+                           data-keepplaying>
+                        <source src="video/footer-mob.mp4" type="video/mp4">
+                        <source src="video/footer-mob.webm" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
