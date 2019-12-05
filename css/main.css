@@ -1485,7 +1485,7 @@ body {
   bottom: 0;
   top: 0;
   margin: auto;
-  z-index: 0; }
+  z-index: -1; }
   .hero-video .video__bg {
     max-width: 320vw; }
 
@@ -1532,7 +1532,7 @@ body {
     margin-right: auto; }
 
 .integral {
-  background-color: #060516; }
+  background-color: #030413; }
   .integral .main-container {
     height: 100%; }
 
@@ -1553,8 +1553,8 @@ body {
 
 .integral-video {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   left: 0;
   right: 0;
   bottom: 0;
